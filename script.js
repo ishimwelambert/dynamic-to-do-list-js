@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTaskBtn = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
 
-    // Function to create and append new task
+    // Arrow function to create and append new task
     const addTask = () => {
         const taskText = taskInput.value.trim();
 
@@ -45,4 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
