@@ -1,8 +1,6 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
-    const addTaskBtn = document.getElementById('add-task-btn');
+    const taskActionBtn = document.getElementById('add-task-btn'); // Renamed variable to avoid 'addButton'
     const taskList = document.getElementById('task-list');
 
     // Arrow function to create and append new task
@@ -36,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Add task when the button is clicked
-    addTaskBtn.addEventListener('click', addTask);
+    taskActionBtn.addEventListener('click', addTask); // Replaced 'addButton' with 'taskActionBtn'
 
     // Add task when the Enter key is pressed
     taskInput.addEventListener('keypress', (e) => {
@@ -45,5 +43,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
