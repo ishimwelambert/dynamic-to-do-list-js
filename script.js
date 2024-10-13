@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
-    const taskActionBtn = document.getElementById('add-task-btn');
+    const taskActionBtn = document.getElementById('add-task-btn'); // Renamed from addButton to taskActionBtn
     const taskList = document.getElementById('task-list');
-    const feedbackDiv = document.getElementById('feedback'); // Assuming there is a feedback div in HTML for user feedback
+    const feedbackDiv = document.getElementById('feedback');
 
     // Arrow function to create and append new task
     const addTask = () => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Add task when the button is clicked
-    taskActionBtn.addEventListener('click', addTask);
+    taskActionBtn.addEventListener('click', addTask); // Using taskActionBtn instead of addButton
 
     // Add task when the Enter key is pressed
     taskInput.addEventListener('keypress', (e) => {
